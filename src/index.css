@@ -11,25 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-html { 
+/*html { 
   background: url(https://cdn.shazoo.ru/449105_bTymv6zaGs_minecraft.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
+}*/
+
+.mine1{
+  background: url(https://cdn.shazoo.ru/449105_bTymv6zaGs_minecraft.jpg) no-repeat ; 
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.mine2
+{
+  
+  background: url(https://data.whicdn.com/images/305814147/original.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.asdf{
-  background: url(https://cdn.shazoo.ru/449105_bTymv6zaGs_minecraft.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: hidden;
-  
-  
+
+.firstImg {
+  height: 300px;
 }
+
+.secondImg {
+  height: 300px;
+  transform: translateY(-20%);
+}
+ 
 a:hover,a:focus{
   outline: none;
   text-decoration: none;
@@ -208,5 +236,3 @@ a:hover,a:focus{
  @media only screen and (max-width: 479px){
   .tab{ padding: 40px 20px; }
  }
- 
-

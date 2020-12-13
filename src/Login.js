@@ -1,6 +1,7 @@
 import React from 'react';
 import fire from './config/fire';
 import {ForIFs} from './ForIFs';
+import index from './index.js';
 class Login extends React.Component{
 
     signUp() {
@@ -30,7 +31,7 @@ class Login extends React.Component{
 
     render(){
         return(
-            <div class="asdf">
+            <div class="mine1">
               <div class="container">
                 <div class="row">
                   <div class="col-md-offset-3 col-md-6">
@@ -40,7 +41,7 @@ class Login extends React.Component{
                     <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">sign up</a></li>
                     </ul>
                       <div class="tab-content tabs">
-                        <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                        <div role="tabpanel" class="tab-pane in active" id="Section1">
                           <div class="form-horizontal">
                             <div class="form-group">
                               <label for="emaillog">email address</label>
@@ -65,7 +66,7 @@ class Login extends React.Component{
                             </div>
                           </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="Section2">
+                        <div role="tabpanel" class="tab-pane" id="Section2">
                               <div class="form-horizontal">
                                 <div class="form-group">
                                 <label for="emailsign">Email address</label>

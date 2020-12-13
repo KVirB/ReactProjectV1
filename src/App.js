@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './Home.js';
+import Home from './Home.jsx';
 import Login from './Login.js';
-
 import fire from './config/fire.js';
 import { Component } from 'react';
-
+import index from './index.js';
 
 class App extends Component {
 
