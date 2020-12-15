@@ -1,7 +1,6 @@
 import React from 'react';
 import fire from './config/fire';
 import {ForIFs} from './ForIFs';
-import index from './index.js';
 class Login extends React.Component{
 
     signUp() {
@@ -49,7 +48,7 @@ class Login extends React.Component{
                             </div>
                             <div class="form-group">
                               <label for="passwordlog">Password</label>
-                              <input id="passwordlog" placeholder="Enter Password.." type="password"  class="form-control"/>
+                              <input id="passwordlog" placeholder="Enter Password.." type="text"  class="form-control"/>
                             </div>
                             <div class="form-group">
                             <div class="main-checkbox">

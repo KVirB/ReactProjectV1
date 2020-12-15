@@ -1,45 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-import Home from './Home.jsx';
-import Login from './Login.js';
-import fire from './config/fire.js';
-import { Component } from 'react';
-import index from './index.js';
+import { Container, Row, Col } from 'react-bootstrap';
+import Main from './Main.js';
+import { Route, Switch, } from 'react-router-dom';
+import Redirect from './Redirect.js';
+import { BrowserRouter } from 'react-router-dom';
 
-class App extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      user: null,
-    };
 
-    this.authListener = this.authListener.bind(this);
-  }
 
-  componentDidMount() {
-    this.authListener();
-  }
+const App = () => {
 
-  authListener() {
-    fire.auth().onAuthStateChanged((user) => {
-      if (user) {
-        this.setState({ user });
-      } else {
-        this.setState({ user: null });
-      }
-    })
-  }
 
-  render(){
-    return (
-      <div className="App">
+  return (
+    <BrowserRouter>
+      <Switch>
+              <Route exact path = "/" component={Redirect}/>
+      </Switch>
+    </BrowserRouter>
+  );
 
-      { this.state.user ? ( <Home /> ) : ( <Login /> ) }
-
-      </div>
-    );
-  }
 }
 
 export default App;

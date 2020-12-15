@@ -19,7 +19,10 @@ code {
   background-size: cover;
   overflow: hidden;
 }*/
-
+.colorA{
+  color: white;
+  text-align: center;
+}
 .mine1{
   background: url(https://cdn.shazoo.ru/449105_bTymv6zaGs_minecraft.jpg) no-repeat ; 
   -webkit-background-size: 100%;
@@ -35,7 +38,7 @@ code {
 .mine2
 {
   
-  background: url(https://data.whicdn.com/images/305814147/original.gif) no-repeat center center fixed; 
+  background: url(https://wallbox.ru/wallpapers/main/201135/tekstury-oboi-fon-e4970ee.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -46,16 +49,47 @@ code {
   left: 0;
   right: 0;
   bottom: 0;
+  
 }
-
-
-.firstImg {
+.size-car{
   height: 300px;
 }
+/*.bgNav{
+  background-image: url(https://sun9-75.userapi.com/impg/iRiYe-Krd39cbgyYWqJqnpdZ526iiXLjxo76Eg/pPAJNQsXF4U.jpg?size=1009x76&quality=96&proxy=1&sign=7620a204870acb3e44b50db0bb27f3bf&type=album);
+  
+}
+*/
+.dropdown-menu.scrollable {
+    height: auto;
+    max-height: 30em;
+    overflow-x: hidden;
+}
+.shriftGl{
+  font-size: 30px;
+  color:#28a745;
+  border-color:#28a745;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.shrift{
+  font-size: 25px;
+  color:#28a745;
+  border-color:#28a745;
+  font-family: Garamond;
+}
+.shrift:hover {
+  color: #800000; /* Цвет ссылки при наведении на нее курсора мыши */  
+  text-decoration:underline; /* Добавляем подчеркивание */
+ }
+ .shriftGl:hover {
+  color: #800000; /* Цвет ссылки при наведении на нее курсора мыши */  
+  text-decoration:underline; /* Добавляем подчеркивание */
+ }
+.firstImage{
+  height: 600px;
+}
 
-.secondImg {
-  height: 300px;
-  transform: translateY(-20%);
+.secondImage {
+  height: 600px;
 }
  
 a:hover,a:focus{
