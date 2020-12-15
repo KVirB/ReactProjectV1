@@ -17,7 +17,7 @@ const Main = () => {
 
     return (
         <Navbar expand="lg" bg="dark" variant="dark" className="justify-content-between bgNav">
-            <Navbar.Brand className="navBrand ml-5 "><NavLink  className="ml-5 shriftGl" NavLink to="/" >ThinkAboutCraft</NavLink></Navbar.Brand>
+            <Navbar.Brand className="navBrand"><NavLink  className="shriftGl" NavLink to="/" >ThinkAboutCraft</NavLink></Navbar.Brand>
             <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
                     <Nav>
