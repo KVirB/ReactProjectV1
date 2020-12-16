@@ -21,7 +21,7 @@ const Main = () => {
             <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
                     <Nav>
-                        <Nav.Link className="navLink mr-5"><NavLink  NavLink to="servers" className="mr-5 shrift">Сервера</NavLink></Nav.Link>
+                        <Nav.Link className="navLink mr-5"><NavLink  NavLink to="/servers" className="mr-5 shrift">Сервера</NavLink></Nav.Link>
                         <Nav.Link className="navLink mr-5"><NavLink  NavLink to="nov" className="mr-5 shrift" >Новости</NavLink></Nav.Link>
                         <Nav.Link className="navLink mr-5"><NavLink  NavLink to="ysl" className="mr-5 shrift">Услуги</NavLink></Nav.Link>
                         <Nav.Link className="navLink mr-5"><NavLink  NavLink to="img" className="mr-5 shrift"><Image src={image} rounded /></NavLink></Nav.Link>

@@ -1,7 +1,7 @@
 import * as axios from 'axios';
-
+debugger;
 const baseRout = axios.create({
-    baseURL: "http://127.0.0.1:3030/BD/"
+    baseURL: "http://127.0.0.1:3001/api/"
     }
 )
 

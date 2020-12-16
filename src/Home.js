@@ -1,10 +1,13 @@
 import React from 'react';
 import fire from './config/fire.js';
 import Carousel1 from './Carousel1.js';
-import { Container,Row,Col } from 'react-bootstrap';
+import { Container,Row,Col, Carousel } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import './index.css';
 import Main from './Main.js';
+import image from './img/mine2.jpg';
+import image2 from './img/mine4.gif';
+
 
 class Home extends React.Component{
 
@@ -14,23 +17,26 @@ class Home extends React.Component{
       render(){
         return(
             
-            <Container fluid className="mine2">
-                <Row >
-                    <Col>
-                        <Main/>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Carousel1/>
-                    </Col>
-                </Row>
-                <br/><br/><br/><br/><br/>
-                <Row>
-                    <Col>  
-                        <h1 className="colorA">Вэйк ап самурай!</h1>
-                    </Col>
-                </Row>
+            <Container>
+            <Row>          
+                <Carousel>
+                    <Carousel.Item className="firstImg">
+                    <img
+                        className="d-block w-100"
+                        src={image}
+                        alt="First slide"
+                    />
+                    </Carousel.Item>
+                    <Carousel.Item className="secondImg">
+                    <img
+                        className="d-block w-100"
+                        src={image2}
+                        alt="second slide"
+                    />
+                    </Carousel.Item>
+                </Carousel>
+            </Row>
+                   
             </Container>    
             
             

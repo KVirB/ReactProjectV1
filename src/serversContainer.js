@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import {setServers, getServersThunk} from './reducers/serversReducer';
 import Servers from './Servers.js';
-import {setServers, getServersThunk} from '../reducers/mastersReducer.js';
 
 
-class ServersDidMount extends React.Component{
+class ServersContainer extends React.Component{
 
      componentDidMount(){
         this.props.getServersThunk();
@@ -12,7 +12,7 @@ class ServersDidMount extends React.Component{
 
     render(){
         return(
-            <Servers Servers={this.props.Servers} />
+            <Servers servers={this.props.servers} />
         )
     }
 }
@@ -23,4 +23,4 @@ let mapStateToProps = (state) => {
     }
 }
 
-export default connect( mapStateToProps, {setServers, getServersThunk} )(ServersDidMount);
+export default connect( mapStateToProps, {setServers, getServersThunk} )(ServersContainer);
