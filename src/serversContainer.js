@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {setServers, getServersThunk} from './reducers/serversReducer';
-import Servers from './Servers.js';
+import Servers from './Servers.jsx';
 
 
 class ServersContainer extends React.Component{
